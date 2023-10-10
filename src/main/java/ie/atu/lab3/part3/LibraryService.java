@@ -2,8 +2,7 @@ package ie.atu.lab3.part3;
 
 import org.springframework.stereotype.Service;
 
-import java.sql.Array;
-import java.sql.ClientInfoStatus;
+
 import java.util.ArrayList;
 
 @Service
@@ -13,4 +12,7 @@ public class LibraryService {
         list.add(book);
     }
 
+    public ArrayList<Book> retrieve() {
+        return list;
+    }
 }
