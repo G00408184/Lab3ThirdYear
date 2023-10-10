@@ -5,15 +5,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmailService {
-    private  final EmailService emailService;
-
-    @Autowired
-
-    public EmailService(EmailService emailService) {
-        this.emailService = emailService;
+    public void sendEmail(String to, String message){
+        System.out.println("koobs" +message);
     }
 
-    public void registerUser(String username,String email){
-
-    }
 }
